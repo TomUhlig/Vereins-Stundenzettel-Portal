@@ -1,9 +1,10 @@
 # Vereins-Stundenzettel · öffentliches Portal
 
 Öffentliche Browser-Oberfläche des privaten Vereins-Stundenzettel-Projekts.
-Dieses Repository enthält ausschließlich die fertige allgemeine Oberfläche
-und die leere Vereinsvorlage. Keine Trainerdateien und keine Unterschriftsbilder.
-Der Git-Verlauf des privaten Projekts wurde nicht übernommen.
+Dieses Repository enthält die fertige Browser-Oberfläche, die leere Vereinsvorlage
+und ausdrücklich freigegebene verschlüsselte Trainerdateien unter `site/trainers/`.
+Die gemeinsame Namensliste wird beim Öffnen auf jedem Gerät automatisch geladen.
+Der Git-Verlauf des privaten Quellprojekts wurde nicht übernommen.
 
 Nach erfolgreicher Pages-Veröffentlichung:
 https://tomuhlig.github.io/Vereins-Stundenzettel-Portal/
@@ -11,11 +12,16 @@ https://tomuhlig.github.io/Vereins-Stundenzettel-Portal/
 ## Nutzung ohne Installation
 
 1. Portal öffnen.
-2. Eigenen Trainer mit Wochenplan und selbst gewählter vierstelliger PIN anlegen,
-   oder ein separat erhaltenes verschlüsseltes Backup importieren.
-3. Namen auswählen, PIN eingeben, Monat oder Jahr wählen, PDFs herunterladen.
+2. Einen hinterlegten Namen auswählen und die zugehörige PIN eingeben.
+3. Monat oder Jahr wählen und PDFs herunterladen.
 
-Trainerdaten werden in der Browser-Datenbank des jeweiligen Geräts gespeichert.
+Ein Backup-Import ist für veröffentlichte Trainer nicht erforderlich. Neue lokale
+Trainer und Planänderungen können über „Trainerpaket für GitHub“ exportiert und
+unter `site/trainers/` veröffentlicht werden. Die bestehende Namensliste dabei
+zusammenführen. Speichern im Browser allein ändert die Repository-Dateien nicht.
+
+Veröffentlichte Trainerdateien werden dauerhaft im Projekt gespeichert.
+Zusätzliche lokale Trainerdaten liegen in der Browser-Datenbank des jeweiligen Geräts.
 Die PIN ist ein einfacher lokaler Zugangsschutz, keine zentrale Anmeldung.
 Verschlüsselung mit einer vierstelligen PIN schützt nicht zuverlässig vor
 gezieltem Offline-Ausprobieren. Backups und fertige PDFs persönlich aufbewahren.
@@ -26,4 +32,7 @@ Kostenlos über GitHub Pages aus diesem öffentlichen Repository. Unter
 Settings → Pages → Source „GitHub Actions“ auswählen, falls die automatische
 Aktivierung nicht erlaubt ist. Anschließend den Workflow „Kostenloses
 Trainerportal“ starten. Der Quellcode wird im separaten privaten Projekt gepflegt;
-dieses Repository erhält nur die geprüfte öffentliche Build-Ausgabe.
+dieses Repository erhält die geprüfte öffentliche Build-Ausgabe und gezielt
+freigegebene verschlüsselte Trainerdateien. Auch verschlüsselte Dateien sind
+öffentlich herunterladbar. Mit einer bekannten PIN lassen sich ihre Inhalte
+öffnen; eine vierstellige PIN ist kein belastbarer Schutz für Unterschriftsbilder.
