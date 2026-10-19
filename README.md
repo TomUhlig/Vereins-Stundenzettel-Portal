@@ -36,3 +36,19 @@ dieses Repository erhält die geprüfte öffentliche Build-Ausgabe und gezielt
 freigegebene verschlüsselte Trainerdateien. Auch verschlüsselte Dateien sind
 öffentlich herunterladbar. Mit einer bekannten PIN lassen sich ihre Inhalte
 öffnen; eine vierstellige PIN ist kein belastbarer Schutz für Unterschriftsbilder.
+
+## Adminseite
+
+https://tomuhlig.github.io/Vereins-Stundenzettel-Portal/admin.html
+
+Mit dem gewählten Adminpasswort öffnen. Marko ist bereits in den verschlüsselten
+Verwaltungsdaten hinterlegt. Trainer lassen sich anlegen und bearbeiten.
+Für dauerhafte Änderungen auf GitHub einmal einen Fine-grained Token für dieses
+Repository mit Contents: Read and write in der Adminseite verbinden. Die
+Schritt-für-Schritt-Anleitung steht direkt im Formular. Der Token wird nicht
+im Repository gespeichert; eine gemerkte Kopie bleibt mit dem Adminpasswort
+verschlüsselt im jeweiligen Browser.
+
+Die Online-Verwaltungsdaten unter `site/admin/` und die Trainerdateien unter
+`site/trainers/` sind maßgeblich. Bei Frontend-Updates niemals durch ältere
+Seed-Dateien aus dem privaten Quellprojekt ersetzen.
